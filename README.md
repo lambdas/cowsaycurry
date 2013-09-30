@@ -1,0 +1,4 @@
+cowsaycurry
+===========
+
+Cowsay in Haskell
