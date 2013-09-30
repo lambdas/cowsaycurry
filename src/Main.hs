@@ -1,10 +1,13 @@
 module Main where
 
-import           Balloon (constructBalloon)
-import           Cow     (constructCow)
+import           System.Environment (getArgs)
+
+import           Balloon            (constructBalloon)
+import           Cow                (constructCow)
 
 main :: IO ()
 main = do
+    args <- getArgs
     cow <- constructCow "default"
-    putStrLn $ constructBalloon "hihihihihi" 3
+    putStrLn $ constructBalloon (unwords args) 20
     putStrLn cow
