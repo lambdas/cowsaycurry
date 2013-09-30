@@ -11,3 +11,6 @@ executable CurriedCow
                    base >= 4
                  , split
   ghc-options:     -Wall
+  other-modules:   
+                   Balloon
+                 , Cow
